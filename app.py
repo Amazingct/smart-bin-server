@@ -56,7 +56,7 @@ def home():
         levels.append(str(val["Level"]))
         content = ""
     for bin in bins:
-        content = content + "<br>" + """<a href="http://127.0.0.1:5000/location?gps={}&Level={}">""".format(maps[bins.index(bin)],levels[bins.index(bin)]) + bin + "</a>" + "\n"
+        content = content + "<br>" + """<a href="https://finalbin.herokuapp.com/location?gps={}&Level={}">""".format(maps[bins.index(bin)],levels[bins.index(bin)]) + bin + "</a>" + "\n"
     html = """
     <!DOCTYPE html>
     <html>
