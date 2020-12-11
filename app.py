@@ -1,6 +1,6 @@
 from flask import Flask, request
 import pyrebase
-
+app = Flask(__name__)
 
 config = {
     "apiKey": "AIzaSyAGvaBLvQAjJAMBLgZkRPYtkhBbgYnqaPU",
@@ -69,8 +69,8 @@ def home():
    
 
 
-app.run(debug=True)
-#print(get_bins_info())
+if __name__ == '__main__':
+    app.run()
 
 # #######################################################################################################
 
